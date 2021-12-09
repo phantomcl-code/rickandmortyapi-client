@@ -1,0 +1,16 @@
+myapp:
+  properties:
+    uriRickAndMorty: https://rickandmortyapi.com/api/character/
+spring:
+  jackson:
+    serialization:
+      indent-output: true
+  application:
+    name: api-rick-and-morty
+server:
+  port: 8080
+info:
+  version: "v1"
+#Metricas de Actuator.
+management.endpoints.web.exposure.include: health,info,metrics
+management.endpoint.health.show-details: always
